@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Tên khoản thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/txtTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        />
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Số tiền             "
+           />
+       <EditText
+           android:layout_margin="8dp"
+           android:id="@+id/txtSoTien"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           />
+   </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Loại thu/chi      "
+         />
+     <EditText
+         android:id="@+id/txtType"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+ </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="insertThuChi"
+            android:layout_margin="8dp"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm"  />
+
+        <Button
+            android:enabled="false"
+            android:layout_margin="8dp"
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cập nhật" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvThuChi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
